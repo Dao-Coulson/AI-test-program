@@ -1,0 +1,14 @@
+<view class="container">
+  <input class="input" placeholder="添加待办事项" value="{{inputValue}}" bindinput="bindKeyInput" confirm-type="done" bindconfirm="addItem" />
+  <view class="todo-list">
+    <block wx:for="{{todoList}}" wx:key="index">
+      <view class="todo-item" bindtap="toggleComplete" data-index="{{index}}">
+        <text class="checkbox" wx:if="{{item.completed}}">☑</text>
+        <text class="checkbox" wx:if="{{!item.completed}}">☐</text>
+        <text class="content" wx:if="{{item.completed}}" style="text-decoration: line-through;">{{item.text}}</text>
+        <text class="content" wx:if="{{!item.completed}}">{{item.text}}</text>
+        <text class="remove" bindtap="removeItem" data-index="{{index}}">✕</text>
+      </view>
+    </block>
+  </view>
+</view>

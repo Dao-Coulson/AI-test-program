@@ -1,0 +1,38 @@
+.container {
+  padding: 20px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4
+	px;
+	padding: 10px;
+	font-size: 14px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	}
+	
+	.todo-list {
+	}
+	
+	.todo-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	}
+	
+	.checkbox {
+	font-size: 20px;
+	margin-right: 10px;
+	}
+	
+	.content {
+	flex: 1;
+	}
+	
+	.remove {
+	font-size: 16px;
+	color: #f00;
+	margin-left: 10px;
+	}
